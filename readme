@@ -1,0 +1,51 @@
+------------------------------------------------------------------------------------------------------------------------
+About Project
+------------------------------------------------------------------------------------------------------------------------
+Author Name: Dhwani Raval
+Project Name: Brill's Tagger
+Version: 0.1
+Programming Language: Python 3.6
+
+
+------------------------------------------------------------------------------------------------------------------------
+Problem Description
+------------------------------------------------------------------------------------------------------------------------
+Transformation-based POS Tagging: Implement Brill’s transformation-based POS tagging algorithm using ONLY the previous
+word’s tag to extract the best five (5) transformation rules to:
+1. Transform “NN” to “VB”
+2. Transform “VB” to “NN”
+Using the learnt rules, manually fill out the missing POS tags (for the word “control”) in the following sentence:
+The_DT president_NN wants_VBZ to_TO control_??? the_DT board_NN 's_POS control_???
+
+
+------------------------------------------------------------------------------------------------------------------------
+About Files
+------------------------------------------------------------------------------------------------------------------------
+The project contains the following files:
+    1. sourcecode/Tagger.py: The python file for the given problem description
+    2. resources/POSTaggedTrainingSet.txt: A training set that has been tagged with POS tags from the Penn Treebank POS
+       tagset
+    3. output/tuple: A text file created during program execution
+    4. output/unigram: Text files related to unigrams created during program execution
+    5. output/tags: Text files related to correct and current tags for words created during program execution
+    6. output/logs: Log files created during each iteration for top 10 rules
+    7. output/top10.txt: Top 10 transformation rules
+    8. readme: A text file containing information about the project
+
+
+------------------------------------------------------------------------------------------------------------------------
+Brill's Tagging Description
+------------------------------------------------------------------------------------------------------------------------
+Brill's Tagging is used for Part-of-Speech (POS) tagging. It is inductive in nature and is based on
+Transformation Based Learning (TBL). The basic idea is to iteratively assign the best tag to a word
+using the learned transformations based upon a set of predefined rules. The goal of this approach is to
+minimize the error rate in every step.
+
+
+------------------------------------------------------------------------------------------------------------------------
+Running Instructions
+------------------------------------------------------------------------------------------------------------------------
+1. Download the project and unzip it in the desired location
+2. In IDE, import the project and run Tagger.py
+3. In cmd, navigate to the location where Brill_Tagging is unzipped and use the following instruction
+    python sourcecode\Tagger.py
